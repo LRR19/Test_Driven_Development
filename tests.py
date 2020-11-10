@@ -28,6 +28,11 @@ class TDD(unittest.TestCase):
         pwd = "LAMP362@"
         self.assertFalse(check_pwd(pwd), msg='Error')
 
+    # test for upper case
+    def test_5(self):
+        pwd = "lamp362@"
+        self.assertFalse(check_pwd(pwd), msg='Error')
+
 
 if __name__ == '__main__':
     unittest.main()
