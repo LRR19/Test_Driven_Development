@@ -33,6 +33,16 @@ class TDD(unittest.TestCase):
         pwd = "lamp362@"
         self.assertFalse(check_pwd(pwd), msg='Error')
 
+    # test for upper and lower case. PASSED
+    def test_6(self):
+        pwd = "Lamp362@"
+        self.assertTrue(check_pwd(pwd), msg='Error')
+
+    # test for digits
+    def test_7(self):
+        pwd = "GreenLamp!"
+        self.assertFalse(check_pwd(pwd), msg="Error")
+
 
 if __name__ == '__main__':
     unittest.main()
