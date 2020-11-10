@@ -18,6 +18,16 @@ class TDD(unittest.TestCase):
         pwd2 = "lamp"
         self.assertFalse(check_pwd(pwd2), msg='Error')
 
+    # test for length that's greater than 20. PASSED
+    def test_3b(self):
+        pwd = "lamp1234567891011121314"
+        self.assertFalse(check_pwd(pwd), msg='Error')
+
+    # test for lower case
+    def test_4(self):
+        pwd = "LAMP362@"
+        self.assertFalse(check_pwd(pwd), msg='Error')
+
 
 if __name__ == '__main__':
     unittest.main()
