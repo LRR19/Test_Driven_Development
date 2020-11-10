@@ -9,4 +9,7 @@ def check_pwd(pwd):
     if not any(i.isupper() for i in pwd):
         return False
 
+    if not any(i.isdigit() for i in pwd):
+        return False
+
     return pwd
