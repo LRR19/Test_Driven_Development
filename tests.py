@@ -8,6 +8,11 @@ class TDD(unittest.TestCase):
         empty_pwd = ""
         self.assertFalse(check_pwd(empty_pwd), msg="Error")
 
+    # test a string
+    def test_2(self):
+        pwd1 = "Lamp362@"
+        self.assertTrue(check_pwd(pwd1), msg='Error')
+
 
 if __name__ == '__main__':
     unittest.main()
