@@ -48,6 +48,71 @@ class TDD(unittest.TestCase):
         pwd = "Lamps362"
         self.assertFalse(check_pwd(pwd), msg='Error')
 
+    # # test for symbols with symbols. PASSED
+    # def test_8b(self):
+    #     pwd = "Lamps362!@"
+    #     self.assertTrue(check_pwd(pwd), msg='Error')
+    #
+    # # test length under min. PASSED
+    # def test_9(self):
+    #     pwd = "Lamp3-"
+    #     self.assertFalse(check_pwd(pwd), msg='Error')
+    #
+    # # test min length. PASSED
+    # def test_10(self):
+    #     pwd = "Lamp362+"
+    #     self.assertTrue(check_pwd(pwd), msg='Error')
+    #
+    # # test max length. PASED
+    # def test_11(self):
+    #     pwd = "CS362+Fall2020^Break"
+    #     self.assertTrue(check_pwd(pwd), msg='Error')
+    #
+    # # test over max length. PASSED
+    # def test_12(self):
+    #     pwd = "CS362+Fall2020-Breaks&pets"
+    #     self.assertFalse(check_pwd(pwd), msg='Error')
+    #
+    # # test just letters. PASSED
+    # def test_13(self):
+    #     pwd = "Lampsarecool"
+    #     self.assertFalse(check_pwd(pwd), msg='Error')
+    #
+    # # test just digits. PASSED
+    # def test_14(self):
+    #     pwd = "12345678"
+    #     self.assertFalse(check_pwd(pwd), msg='Error')
+    #
+    # # test just symbols. PASSED
+    # def test_15(self):
+    #     pwd = "-~`!@#$%^&*()_+="
+    #     self.assertFalse(check_pwd(pwd), msg='Error')
+    #
+    # # test digits and symbols. PASSED
+    # def test_16(self):
+    #     pwd = "-~`!@#$%^&*()_+=26"
+    #     self.assertFalse(check_pwd(pwd), msg='Error')
+    #
+    # # test letters and symbols. PASSED
+    # def test_17(self):
+    #     pwd = "Lamp-~`!@#"
+    #     self.assertFalse(check_pwd(pwd), msg='assertion failed')
+    #
+    # # test symbols not allowed. PASSED
+    # def test_18(self):
+    #     pwd = "Lamp123{}"
+    #     self.assertFalse(check_pwd(pwd), msg='assertion failed')
+    #
+    # # test digits and letters. PASSED
+    # def test_19(self):
+    #     pwd = "Lamps236"
+    #     self.assertFalse(check_pwd(pwd), msg='Error')
+    #
+    # # test symbols and letters. PASSED
+    # def test_20(self):
+    #     pwd = "Lamps!@#$"
+    #     self.assertFalse(check_pwd(pwd), msg='Error')
+
 
 if __name__ == '__main__':
     unittest.main()
