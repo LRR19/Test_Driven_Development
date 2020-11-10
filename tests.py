@@ -43,6 +43,11 @@ class TDD(unittest.TestCase):
         pwd = "GreenLamp!"
         self.assertFalse(check_pwd(pwd), msg="Error")
 
+    # test for symbols
+    def test_8(self):
+        pwd = "Lamps362"
+        self.assertFalse(check_pwd(pwd), msg='Error')
+
 
 if __name__ == '__main__':
     unittest.main()
